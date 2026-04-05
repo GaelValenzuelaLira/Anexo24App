@@ -16,6 +16,7 @@ namespace Anexo24App.Views
         {
             InitializeComponent();
 
+            //Ponemos de background esta imagen 
             this.BackgroundImage = Properties.Resources.LoginBackground;
             this.BackgroundImageLayout = ImageLayout.Stretch;
         }
