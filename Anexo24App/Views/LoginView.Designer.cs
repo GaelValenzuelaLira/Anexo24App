@@ -31,12 +31,12 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblSubtitulo = new System.Windows.Forms.Label();
             this.panelCredenciales = new System.Windows.Forms.Panel();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.txtUser = new System.Windows.Forms.TextBox();
-            this.lblPass = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnLoggin = new System.Windows.Forms.Button();
             this.lblRecuperar = new System.Windows.Forms.Label();
+            this.btnLoggin = new System.Windows.Forms.Button();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.lblPass = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.lblCorreo = new System.Windows.Forms.Label();
             this.panelCredenciales.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,63 +69,27 @@
             this.panelCredenciales.BackColor = System.Drawing.Color.White;
             this.panelCredenciales.Controls.Add(this.lblRecuperar);
             this.panelCredenciales.Controls.Add(this.btnLoggin);
-            this.panelCredenciales.Controls.Add(this.textBox1);
+            this.panelCredenciales.Controls.Add(this.txtPass);
             this.panelCredenciales.Controls.Add(this.lblPass);
             this.panelCredenciales.Controls.Add(this.txtUser);
             this.panelCredenciales.Controls.Add(this.lblCorreo);
-            this.panelCredenciales.Location = new System.Drawing.Point(212, 87);
+            this.panelCredenciales.Location = new System.Drawing.Point(212, 90);
             this.panelCredenciales.Name = "panelCredenciales";
             this.panelCredenciales.Size = new System.Drawing.Size(327, 332);
             this.panelCredenciales.TabIndex = 2;
             // 
-            // lblCorreo
+            // lblRecuperar
             // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCorreo.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.ForeColor = System.Drawing.Color.Black;
-            this.lblCorreo.Location = new System.Drawing.Point(20, 30);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(214, 22);
-            this.lblCorreo.TabIndex = 0;
-            this.lblCorreo.Text = "Usuario o correo electrónico";
-            // 
-            // txtUser
-            // 
-            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUser.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.ForeColor = System.Drawing.Color.Black;
-            this.txtUser.Location = new System.Drawing.Point(24, 57);
-            this.txtUser.Multiline = true;
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(281, 36);
-            this.txtUser.TabIndex = 1;
-            this.txtUser.TabStop = false;
-            // 
-            // lblPass
-            // 
-            this.lblPass.AutoSize = true;
-            this.lblPass.BackColor = System.Drawing.Color.Transparent;
-            this.lblPass.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPass.ForeColor = System.Drawing.Color.Black;
-            this.lblPass.Location = new System.Drawing.Point(20, 122);
-            this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(88, 22);
-            this.lblPass.TabIndex = 2;
-            this.lblPass.Text = "Contraseña";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(24, 149);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '#';
-            this.textBox1.Size = new System.Drawing.Size(281, 36);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TabStop = false;
+            this.lblRecuperar.AutoSize = true;
+            this.lblRecuperar.BackColor = System.Drawing.Color.Transparent;
+            this.lblRecuperar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblRecuperar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecuperar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblRecuperar.Location = new System.Drawing.Point(116, 208);
+            this.lblRecuperar.Name = "lblRecuperar";
+            this.lblRecuperar.Size = new System.Drawing.Size(189, 22);
+            this.lblRecuperar.TabIndex = 3;
+            this.lblRecuperar.Text = "¿Olvidaste tu contraseña?";
             // 
             // btnLoggin
             // 
@@ -141,23 +105,59 @@
             this.btnLoggin.Text = "Iniciar sesión";
             this.btnLoggin.UseVisualStyleBackColor = false;
             // 
-            // lblRecuperar
+            // txtPass
             // 
-            this.lblRecuperar.AutoSize = true;
-            this.lblRecuperar.BackColor = System.Drawing.Color.Transparent;
-            this.lblRecuperar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblRecuperar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecuperar.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblRecuperar.Location = new System.Drawing.Point(116, 208);
-            this.lblRecuperar.Name = "lblRecuperar";
-            this.lblRecuperar.Size = new System.Drawing.Size(189, 22);
-            this.lblRecuperar.TabIndex = 3;
-            this.lblRecuperar.Text = "¿Olvidaste tu contraseña?";
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPass.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.ForeColor = System.Drawing.Color.Black;
+            this.txtPass.Location = new System.Drawing.Point(24, 149);
+            this.txtPass.Multiline = true;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '#';
+            this.txtPass.Size = new System.Drawing.Size(281, 36);
+            this.txtPass.TabIndex = 3;
+            this.txtPass.TabStop = false;
+            // 
+            // lblPass
+            // 
+            this.lblPass.AutoSize = true;
+            this.lblPass.BackColor = System.Drawing.Color.Transparent;
+            this.lblPass.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPass.ForeColor = System.Drawing.Color.Black;
+            this.lblPass.Location = new System.Drawing.Point(20, 122);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(88, 22);
+            this.lblPass.TabIndex = 2;
+            this.lblPass.Text = "Contraseña";
+            // 
+            // txtUser
+            // 
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUser.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.ForeColor = System.Drawing.Color.Black;
+            this.txtUser.Location = new System.Drawing.Point(24, 57);
+            this.txtUser.Multiline = true;
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(281, 36);
+            this.txtUser.TabIndex = 1;
+            this.txtUser.TabStop = false;
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCorreo.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.ForeColor = System.Drawing.Color.Black;
+            this.lblCorreo.Location = new System.Drawing.Point(20, 30);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(214, 22);
+            this.lblCorreo.TabIndex = 0;
+            this.lblCorreo.Text = "Usuario o correo electrónico";
             // 
             // LoginView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(734, 431);
+            this.ClientSize = new System.Drawing.Size(734, 461);
             this.Controls.Add(this.panelCredenciales);
             this.Controls.Add(this.lblSubtitulo);
             this.Controls.Add(this.lblTitulo);
@@ -180,7 +180,7 @@
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label lblPass;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnLoggin;
         private System.Windows.Forms.Label lblRecuperar;
     }
