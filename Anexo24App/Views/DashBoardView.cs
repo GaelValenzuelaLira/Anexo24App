@@ -74,9 +74,6 @@ namespace Anexo24App.Views
         #endregion
 
         //fin region funciones
-
-
-
     }
 }
 
