@@ -28,19 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelTitulo = new System.Windows.Forms.Panel();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mainmenuStrip = new System.Windows.Forms.MenuStrip();
             this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.dawdawdwToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Interfases = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem4 = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem5 = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem2 = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem6 = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem7 = new FontAwesome.Sharp.IconMenuItem();
             this.materialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,32 +42,40 @@
             this.submanufacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentesAduanalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activoFijoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Interfases = new FontAwesome.Sharp.IconMenuItem();
             this.entradasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movimientosDeManufacturaYAjustesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iconMenuItem4 = new FontAwesome.Sharp.IconMenuItem();
             this.importacionesTemporalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entradasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.salidasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.activoFijoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.iconMenuItem5 = new FontAwesome.Sharp.IconMenuItem();
             this.entradasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.salidasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.movimientosYAjustesDeManufacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.descargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1.SuspendLayout();
+            this.iconMenuItem2 = new FontAwesome.Sharp.IconMenuItem();
+            this.iconMenuItem6 = new FontAwesome.Sharp.IconMenuItem();
+            this.iconMenuItem7 = new FontAwesome.Sharp.IconMenuItem();
+            this.panelExit = new System.Windows.Forms.Panel();
+            this.panelTitulo.SuspendLayout();
             this.panel2.SuspendLayout();
             this.mainmenuStrip.SuspendLayout();
+            this.panelExit.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelTitulo
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.btnExit);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1261, 61);
-            this.panel1.TabIndex = 2;
+            this.panelTitulo.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panelTitulo.Controls.Add(this.panelExit);
+            this.panelTitulo.Controls.Add(this.label1);
+            this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitulo.Location = new System.Drawing.Point(0, 0);
+            this.panelTitulo.Name = "panelTitulo";
+            this.panelTitulo.Size = new System.Drawing.Size(1261, 61);
+            this.panelTitulo.TabIndex = 2;
             // 
             // btnExit
             // 
@@ -88,7 +90,7 @@
             this.btnExit.IconColor = System.Drawing.Color.White;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 35;
-            this.btnExit.Location = new System.Drawing.Point(1045, 12);
+            this.btnExit.Location = new System.Drawing.Point(12, 9);
             this.btnExit.Margin = new System.Windows.Forms.Padding(0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(207, 42);
@@ -102,6 +104,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(503, 35);
@@ -164,97 +167,6 @@
             this.dawdawdwToolStripMenuItem.Size = new System.Drawing.Size(347, 34);
             this.dawdawdwToolStripMenuItem.Text = "Datos del contribuyente";
             // 
-            // Interfases
-            // 
-            this.Interfases.BackColor = System.Drawing.Color.White;
-            this.Interfases.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.entradasToolStripMenuItem,
-            this.salidasToolStripMenuItem,
-            this.movimientosDeManufacturaYAjustesToolStripMenuItem});
-            this.Interfases.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Interfases.IconChar = FontAwesome.Sharp.IconChar.Sitemap;
-            this.Interfases.IconColor = System.Drawing.Color.Black;
-            this.Interfases.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Interfases.IconSize = 90;
-            this.Interfases.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
-            this.Interfases.Name = "Interfases";
-            this.Interfases.Size = new System.Drawing.Size(164, 39);
-            this.Interfases.Text = "Interfases";
-            // 
-            // iconMenuItem4
-            // 
-            this.iconMenuItem4.BackColor = System.Drawing.Color.White;
-            this.iconMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.importacionesTemporalesToolStripMenuItem,
-            this.entradasToolStripMenuItem1,
-            this.salidasToolStripMenuItem1,
-            this.activoFijoToolStripMenuItem1});
-            this.iconMenuItem4.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconMenuItem4.IconChar = FontAwesome.Sharp.IconChar.Ship;
-            this.iconMenuItem4.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem4.IconSize = 90;
-            this.iconMenuItem4.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
-            this.iconMenuItem4.Name = "iconMenuItem4";
-            this.iconMenuItem4.Size = new System.Drawing.Size(143, 39);
-            this.iconMenuItem4.Text = "Aduanas";
-            // 
-            // iconMenuItem5
-            // 
-            this.iconMenuItem5.BackColor = System.Drawing.Color.White;
-            this.iconMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.entradasToolStripMenuItem2,
-            this.salidasToolStripMenuItem2,
-            this.movimientosYAjustesDeManufacturaToolStripMenuItem,
-            this.descargosToolStripMenuItem});
-            this.iconMenuItem5.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconMenuItem5.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.iconMenuItem5.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem5.IconSize = 90;
-            this.iconMenuItem5.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
-            this.iconMenuItem5.Name = "iconMenuItem5";
-            this.iconMenuItem5.Size = new System.Drawing.Size(146, 39);
-            this.iconMenuItem5.Text = "Procesos";
-            // 
-            // iconMenuItem2
-            // 
-            this.iconMenuItem2.BackColor = System.Drawing.Color.White;
-            this.iconMenuItem2.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconMenuItem2.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
-            this.iconMenuItem2.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem2.IconSize = 90;
-            this.iconMenuItem2.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
-            this.iconMenuItem2.Name = "iconMenuItem2";
-            this.iconMenuItem2.Size = new System.Drawing.Size(150, 39);
-            this.iconMenuItem2.Text = "Reportes";
-            // 
-            // iconMenuItem6
-            // 
-            this.iconMenuItem6.BackColor = System.Drawing.Color.White;
-            this.iconMenuItem6.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconMenuItem6.IconChar = FontAwesome.Sharp.IconChar.Ellipsis;
-            this.iconMenuItem6.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem6.IconSize = 90;
-            this.iconMenuItem6.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
-            this.iconMenuItem6.Name = "iconMenuItem6";
-            this.iconMenuItem6.Size = new System.Drawing.Size(88, 39);
-            this.iconMenuItem6.Text = "Mas";
-            // 
-            // iconMenuItem7
-            // 
-            this.iconMenuItem7.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconMenuItem7.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.iconMenuItem7.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem7.IconSize = 90;
-            this.iconMenuItem7.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
-            this.iconMenuItem7.Name = "iconMenuItem7";
-            this.iconMenuItem7.Size = new System.Drawing.Size(210, 39);
-            this.iconMenuItem7.Text = "Configuracion";
-            // 
             // materialesToolStripMenuItem
             // 
             this.materialesToolStripMenuItem.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -304,6 +216,23 @@
             this.activoFijoToolStripMenuItem.Size = new System.Drawing.Size(347, 34);
             this.activoFijoToolStripMenuItem.Text = "Activo fijo";
             // 
+            // Interfases
+            // 
+            this.Interfases.BackColor = System.Drawing.Color.White;
+            this.Interfases.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.entradasToolStripMenuItem,
+            this.salidasToolStripMenuItem,
+            this.movimientosDeManufacturaYAjustesToolStripMenuItem});
+            this.Interfases.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Interfases.IconChar = FontAwesome.Sharp.IconChar.Sitemap;
+            this.Interfases.IconColor = System.Drawing.Color.Black;
+            this.Interfases.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Interfases.IconSize = 90;
+            this.Interfases.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
+            this.Interfases.Name = "Interfases";
+            this.Interfases.Size = new System.Drawing.Size(164, 39);
+            this.Interfases.Text = "Interfases";
+            // 
             // entradasToolStripMenuItem
             // 
             this.entradasToolStripMenuItem.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -324,6 +253,24 @@
             this.movimientosDeManufacturaYAjustesToolStripMenuItem.Name = "movimientosDeManufacturaYAjustesToolStripMenuItem";
             this.movimientosDeManufacturaYAjustesToolStripMenuItem.Size = new System.Drawing.Size(505, 34);
             this.movimientosDeManufacturaYAjustesToolStripMenuItem.Text = "Movimientos de manufactura y ajustes";
+            // 
+            // iconMenuItem4
+            // 
+            this.iconMenuItem4.BackColor = System.Drawing.Color.White;
+            this.iconMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.importacionesTemporalesToolStripMenuItem,
+            this.entradasToolStripMenuItem1,
+            this.salidasToolStripMenuItem1,
+            this.activoFijoToolStripMenuItem1});
+            this.iconMenuItem4.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem4.IconChar = FontAwesome.Sharp.IconChar.Ship;
+            this.iconMenuItem4.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMenuItem4.IconSize = 90;
+            this.iconMenuItem4.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
+            this.iconMenuItem4.Name = "iconMenuItem4";
+            this.iconMenuItem4.Size = new System.Drawing.Size(143, 39);
+            this.iconMenuItem4.Text = "Aduanas";
             // 
             // importacionesTemporalesToolStripMenuItem
             // 
@@ -353,6 +300,24 @@
             this.activoFijoToolStripMenuItem1.Size = new System.Drawing.Size(369, 34);
             this.activoFijoToolStripMenuItem1.Text = "Activo fijo";
             // 
+            // iconMenuItem5
+            // 
+            this.iconMenuItem5.BackColor = System.Drawing.Color.White;
+            this.iconMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.entradasToolStripMenuItem2,
+            this.salidasToolStripMenuItem2,
+            this.movimientosYAjustesDeManufacturaToolStripMenuItem,
+            this.descargosToolStripMenuItem});
+            this.iconMenuItem5.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem5.IconChar = FontAwesome.Sharp.IconChar.Cog;
+            this.iconMenuItem5.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMenuItem5.IconSize = 90;
+            this.iconMenuItem5.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
+            this.iconMenuItem5.Name = "iconMenuItem5";
+            this.iconMenuItem5.Size = new System.Drawing.Size(146, 39);
+            this.iconMenuItem5.Text = "Procesos";
+            // 
             // entradasToolStripMenuItem2
             // 
             this.entradasToolStripMenuItem2.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -381,6 +346,53 @@
             this.descargosToolStripMenuItem.Size = new System.Drawing.Size(505, 34);
             this.descargosToolStripMenuItem.Text = "Descargos";
             // 
+            // iconMenuItem2
+            // 
+            this.iconMenuItem2.BackColor = System.Drawing.Color.White;
+            this.iconMenuItem2.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem2.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
+            this.iconMenuItem2.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMenuItem2.IconSize = 90;
+            this.iconMenuItem2.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
+            this.iconMenuItem2.Name = "iconMenuItem2";
+            this.iconMenuItem2.Size = new System.Drawing.Size(150, 39);
+            this.iconMenuItem2.Text = "Reportes";
+            // 
+            // iconMenuItem6
+            // 
+            this.iconMenuItem6.BackColor = System.Drawing.Color.White;
+            this.iconMenuItem6.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem6.IconChar = FontAwesome.Sharp.IconChar.Ellipsis;
+            this.iconMenuItem6.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMenuItem6.IconSize = 90;
+            this.iconMenuItem6.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
+            this.iconMenuItem6.Name = "iconMenuItem6";
+            this.iconMenuItem6.Size = new System.Drawing.Size(88, 39);
+            this.iconMenuItem6.Text = "Mas";
+            // 
+            // iconMenuItem7
+            // 
+            this.iconMenuItem7.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem7.IconChar = FontAwesome.Sharp.IconChar.Cog;
+            this.iconMenuItem7.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMenuItem7.IconSize = 90;
+            this.iconMenuItem7.Margin = new System.Windows.Forms.Padding(0, 0, 32, 0);
+            this.iconMenuItem7.Name = "iconMenuItem7";
+            this.iconMenuItem7.Size = new System.Drawing.Size(210, 39);
+            this.iconMenuItem7.Text = "Configuracion";
+            // 
+            // panelExit
+            // 
+            this.panelExit.Controls.Add(this.btnExit);
+            this.panelExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelExit.Location = new System.Drawing.Point(1033, 0);
+            this.panelExit.Name = "panelExit";
+            this.panelExit.Size = new System.Drawing.Size(228, 61);
+            this.panelExit.TabIndex = 4;
+            // 
             // DashBoardView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -388,24 +400,25 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1261, 726);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.panelTitulo);
             this.Name = "DashBoardView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoardView";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DashBoardView_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelTitulo.ResumeLayout(false);
+            this.panelTitulo.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.mainmenuStrip.ResumeLayout(false);
             this.mainmenuStrip.PerformLayout();
+            this.panelExit.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelTitulo;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btnExit;
         private System.Windows.Forms.Panel panel2;
@@ -436,5 +449,6 @@
         private System.Windows.Forms.ToolStripMenuItem salidasToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem movimientosYAjustesDeManufacturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem descargosToolStripMenuItem;
+        private System.Windows.Forms.Panel panelExit;
     }
 }
