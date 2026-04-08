@@ -104,6 +104,7 @@
             this.btnLoggin.TabIndex = 4;
             this.btnLoggin.Text = "Iniciar sesión";
             this.btnLoggin.UseVisualStyleBackColor = false;
+            this.btnLoggin.Click += new System.EventHandler(this.btnLoggin_Click);
             // 
             // txtPass
             // 

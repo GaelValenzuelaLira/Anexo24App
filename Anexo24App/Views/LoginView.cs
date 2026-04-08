@@ -20,5 +20,15 @@ namespace Anexo24App.Views
             this.BackgroundImage = Properties.Resources.LoginBackground;
             this.BackgroundImageLayout = ImageLayout.Stretch;
         }
+
+        private void btnLoggin_Click(object sender, EventArgs e)
+        {
+            //Ejecutamos la ventana principal(DashBoardView)
+            //Nota: Aun no cuenta con validaciones de contraseña, simplemente llamamos al form principal
+
+            DashBoardView DashBoardView = new DashBoardView();
+            DashBoardView.Show();
+            this.Hide();
+        }
     }
 }
