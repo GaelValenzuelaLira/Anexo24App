@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelTitulo = new System.Windows.Forms.Panel();
+            this.panelExit = new System.Windows.Forms.Panel();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -59,11 +60,10 @@
             this.iconMenuItem2 = new FontAwesome.Sharp.IconMenuItem();
             this.iconMenuItem6 = new FontAwesome.Sharp.IconMenuItem();
             this.iconMenuItem7 = new FontAwesome.Sharp.IconMenuItem();
-            this.panelExit = new System.Windows.Forms.Panel();
             this.panelTitulo.SuspendLayout();
+            this.panelExit.SuspendLayout();
             this.panel2.SuspendLayout();
             this.mainmenuStrip.SuspendLayout();
-            this.panelExit.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTitulo
@@ -76,6 +76,15 @@
             this.panelTitulo.Name = "panelTitulo";
             this.panelTitulo.Size = new System.Drawing.Size(1261, 61);
             this.panelTitulo.TabIndex = 2;
+            // 
+            // panelExit
+            // 
+            this.panelExit.Controls.Add(this.btnExit);
+            this.panelExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelExit.Location = new System.Drawing.Point(1033, 0);
+            this.panelExit.Name = "panelExit";
+            this.panelExit.Size = new System.Drawing.Size(228, 61);
+            this.panelExit.TabIndex = 4;
             // 
             // btnExit
             // 
@@ -384,15 +393,6 @@
             this.iconMenuItem7.Size = new System.Drawing.Size(210, 39);
             this.iconMenuItem7.Text = "Configuracion";
             // 
-            // panelExit
-            // 
-            this.panelExit.Controls.Add(this.btnExit);
-            this.panelExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelExit.Location = new System.Drawing.Point(1033, 0);
-            this.panelExit.Name = "panelExit";
-            this.panelExit.Size = new System.Drawing.Size(228, 61);
-            this.panelExit.TabIndex = 4;
-            // 
             // DashBoardView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,6 +401,7 @@
             this.ClientSize = new System.Drawing.Size(1261, 726);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "DashBoardView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoardView";
@@ -408,11 +409,11 @@
             this.Load += new System.EventHandler(this.DashBoardView_Load);
             this.panelTitulo.ResumeLayout(false);
             this.panelTitulo.PerformLayout();
+            this.panelExit.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.mainmenuStrip.ResumeLayout(false);
             this.mainmenuStrip.PerformLayout();
-            this.panelExit.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
