@@ -65,7 +65,6 @@
             this.panelTituloDetalles = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.toolTipAdvertencia = new System.Windows.Forms.ToolTip(this.components);
             this.panelTitulo.SuspendLayout();
             this.tabControlDGC.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -84,7 +83,7 @@
             this.panelTitulo.Controls.Add(this.lblTitulo);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(0, 0);
-            this.panelTitulo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelTitulo.Name = "panelTitulo";
             this.panelTitulo.Size = new System.Drawing.Size(1138, 47);
             this.panelTitulo.TabIndex = 0;
@@ -121,7 +120,7 @@
             this.tabPage1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 33);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage1.Size = new System.Drawing.Size(1130, 603);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Vista";
@@ -208,7 +207,7 @@
             this.tabPageDetalles.Controls.Add(this.panelTituloDetalles);
             this.tabPageDetalles.Location = new System.Drawing.Point(4, 33);
             this.tabPageDetalles.Name = "tabPageDetalles";
-            this.tabPageDetalles.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDetalles.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPageDetalles.Size = new System.Drawing.Size(1130, 603);
             this.tabPageDetalles.TabIndex = 1;
             this.tabPageDetalles.Text = "Detalles";
@@ -254,9 +253,9 @@
             this.lblMunicipio.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMunicipio.Location = new System.Drawing.Point(764, 356);
             this.lblMunicipio.Name = "lblMunicipio";
-            this.lblMunicipio.Size = new System.Drawing.Size(144, 29);
+            this.lblMunicipio.Size = new System.Drawing.Size(153, 29);
             this.lblMunicipio.TabIndex = 35;
-            this.lblMunicipio.Text = "9. Municipio";
+            this.lblMunicipio.Text = "9. Municipio:";
             // 
             // txtEntidadFederativa
             // 
@@ -272,9 +271,9 @@
             this.lblEntidadFederativa.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEntidadFederativa.Location = new System.Drawing.Point(394, 356);
             this.lblEntidadFederativa.Name = "lblEntidadFederativa";
-            this.lblEntidadFederativa.Size = new System.Drawing.Size(243, 29);
+            this.lblEntidadFederativa.Size = new System.Drawing.Size(252, 29);
             this.lblEntidadFederativa.TabIndex = 33;
-            this.lblEntidadFederativa.Text = "8. Entidad federativa";
+            this.lblEntidadFederativa.Text = "8. Entidad federativa:";
             // 
             // txtColonia
             // 
@@ -290,9 +289,9 @@
             this.lblColonia.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblColonia.Location = new System.Drawing.Point(10, 356);
             this.lblColonia.Name = "lblColonia";
-            this.lblColonia.Size = new System.Drawing.Size(122, 29);
+            this.lblColonia.Size = new System.Drawing.Size(131, 29);
             this.lblColonia.TabIndex = 31;
-            this.lblColonia.Text = "7. Colonia";
+            this.lblColonia.Text = "7. Colonia:";
             // 
             // txtCP
             // 
@@ -464,11 +463,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Recuerda siempre \"Guardar cambios\" si realizas alguno.";
             // 
-            // toolTipAdvertencia
-            // 
-            this.toolTipAdvertencia.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTipAdvertencia.ToolTipTitle = "Advertencia";
-            // 
             // Cat_DatosContribuyenteView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,7 +470,7 @@
             this.ClientSize = new System.Drawing.Size(1138, 687);
             this.Controls.Add(this.tabControlDGC);
             this.Controls.Add(this.panelTitulo);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Cat_DatosContribuyenteView";
             this.Text = "Cat_DatosContribuyenteView";
             this.Load += new System.EventHandler(this.Cat_DatosContribuyenteView_Load);
@@ -513,7 +507,6 @@
         private FontAwesome.Sharp.IconButton btnRefresh;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.Panel panelTituloDetalles;
-        private System.Windows.Forms.ToolTip toolTipAdvertencia;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelOpciones;
         private System.Windows.Forms.Button btnSave;
