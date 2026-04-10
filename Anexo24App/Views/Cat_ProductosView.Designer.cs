@@ -34,11 +34,18 @@
             this.tabControlDGC = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panelAddRefresh = new System.Windows.Forms.Panel();
+            this.btnRefresh = new FontAwesome.Sharp.IconButton();
+            this.btnAdd = new FontAwesome.Sharp.IconButton();
             this.panelBusquedas = new System.Windows.Forms.Panel();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.dataGridViewDGC = new System.Windows.Forms.DataGridView();
             this.tabPageDetalles = new System.Windows.Forms.TabPage();
             this.panelDatos = new System.Windows.Forms.Panel();
+            this.cbPlantasBodegas = new System.Windows.Forms.ComboBox();
+            this.cbUnidadesMedidaT = new System.Windows.Forms.ComboBox();
+            this.cbUnidadesMedidaC = new System.Windows.Forms.ComboBox();
+            this.cbFraccionArancelaria = new System.Windows.Forms.ComboBox();
+            this.cbEstatus = new System.Windows.Forms.ComboBox();
             this.lblPlantasBodegas = new System.Windows.Forms.Label();
             this.lblUMTigie = new System.Windows.Forms.Label();
             this.lblUMComercializacion = new System.Windows.Forms.Label();
@@ -56,13 +63,6 @@
             this.panelTituloDetalles = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.btnRefresh = new FontAwesome.Sharp.IconButton();
-            this.btnAdd = new FontAwesome.Sharp.IconButton();
-            this.cbEstatus = new System.Windows.Forms.ComboBox();
-            this.cbFraccionArancelaria = new System.Windows.Forms.ComboBox();
-            this.cbUnidadesMedidaC = new System.Windows.Forms.ComboBox();
-            this.cbUnidadesMedidaT = new System.Windows.Forms.ComboBox();
-            this.cbPlantasBodegas = new System.Windows.Forms.ComboBox();
             this.panelTitulo.SuspendLayout();
             this.tabControlDGC.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -135,6 +135,40 @@
             this.panelAddRefresh.Size = new System.Drawing.Size(1124, 54);
             this.panelAddRefresh.TabIndex = 2;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.White;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnRefresh.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Repeat;
+            this.btnRefresh.IconColor = System.Drawing.Color.Black;
+            this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnRefresh.IconSize = 40;
+            this.btnRefresh.Location = new System.Drawing.Point(1053, 0);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(71, 54);
+            this.btnRefresh.TabIndex = 1;
+            this.toolTip.SetToolTip(this.btnRefresh, "Refresca datos");
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAdd.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
+            this.btnAdd.IconColor = System.Drawing.Color.Black;
+            this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnAdd.IconSize = 40;
+            this.btnAdd.Location = new System.Drawing.Point(0, 0);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(71, 54);
+            this.btnAdd.TabIndex = 0;
+            this.toolTip.SetToolTip(this.btnAdd, "Agrega un nuevo registro");
+            this.btnAdd.UseVisualStyleBackColor = false;
+            // 
             // panelBusquedas
             // 
             this.panelBusquedas.Controls.Add(this.txtBusqueda);
@@ -163,6 +197,7 @@
             this.dataGridViewDGC.RowHeadersWidth = 51;
             this.dataGridViewDGC.Size = new System.Drawing.Size(1124, 597);
             this.dataGridViewDGC.TabIndex = 0;
+            this.dataGridViewDGC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDGC_CellContentClick);
             // 
             // tabPageDetalles
             // 
@@ -201,6 +236,52 @@
             this.panelDatos.Size = new System.Drawing.Size(1124, 466);
             this.panelDatos.TabIndex = 20;
             this.panelDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDatos_Paint);
+            // 
+            // cbPlantasBodegas
+            // 
+            this.cbPlantasBodegas.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPlantasBodegas.FormattingEnabled = true;
+            this.cbPlantasBodegas.Location = new System.Drawing.Point(770, 393);
+            this.cbPlantasBodegas.Name = "cbPlantasBodegas";
+            this.cbPlantasBodegas.Size = new System.Drawing.Size(289, 37);
+            this.cbPlantasBodegas.TabIndex = 46;
+            // 
+            // cbUnidadesMedidaT
+            // 
+            this.cbUnidadesMedidaT.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUnidadesMedidaT.FormattingEnabled = true;
+            this.cbUnidadesMedidaT.Location = new System.Drawing.Point(15, 393);
+            this.cbUnidadesMedidaT.Name = "cbUnidadesMedidaT";
+            this.cbUnidadesMedidaT.Size = new System.Drawing.Size(289, 37);
+            this.cbUnidadesMedidaT.TabIndex = 45;
+            // 
+            // cbUnidadesMedidaC
+            // 
+            this.cbUnidadesMedidaC.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUnidadesMedidaC.FormattingEnabled = true;
+            this.cbUnidadesMedidaC.Location = new System.Drawing.Point(770, 236);
+            this.cbUnidadesMedidaC.Name = "cbUnidadesMedidaC";
+            this.cbUnidadesMedidaC.Size = new System.Drawing.Size(289, 37);
+            this.cbUnidadesMedidaC.TabIndex = 44;
+            this.cbUnidadesMedidaC.SelectedIndexChanged += new System.EventHandler(this.cbUnidadesMedidaC_SelectedIndexChanged);
+            // 
+            // cbFraccionArancelaria
+            // 
+            this.cbFraccionArancelaria.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFraccionArancelaria.FormattingEnabled = true;
+            this.cbFraccionArancelaria.Location = new System.Drawing.Point(400, 236);
+            this.cbFraccionArancelaria.Name = "cbFraccionArancelaria";
+            this.cbFraccionArancelaria.Size = new System.Drawing.Size(289, 37);
+            this.cbFraccionArancelaria.TabIndex = 43;
+            // 
+            // cbEstatus
+            // 
+            this.cbEstatus.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEstatus.FormattingEnabled = true;
+            this.cbEstatus.Location = new System.Drawing.Point(15, 236);
+            this.cbEstatus.Name = "cbEstatus";
+            this.cbEstatus.Size = new System.Drawing.Size(289, 37);
+            this.cbEstatus.TabIndex = 38;
             // 
             // lblPlantasBodegas
             // 
@@ -367,86 +448,6 @@
             this.label1.Size = new System.Drawing.Size(539, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Recuerda siempre \"Guardar cambios\" si realizas alguno.";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.White;
-            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnRefresh.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Repeat;
-            this.btnRefresh.IconColor = System.Drawing.Color.Black;
-            this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnRefresh.IconSize = 40;
-            this.btnRefresh.Location = new System.Drawing.Point(1053, 0);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(71, 54);
-            this.btnRefresh.TabIndex = 1;
-            this.toolTip.SetToolTip(this.btnRefresh, "Refresca datos");
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.White;
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAdd.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            this.btnAdd.IconColor = System.Drawing.Color.Black;
-            this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnAdd.IconSize = 40;
-            this.btnAdd.Location = new System.Drawing.Point(0, 0);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(71, 54);
-            this.btnAdd.TabIndex = 0;
-            this.toolTip.SetToolTip(this.btnAdd, "Agrega un nuevo registro");
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // cbEstatus
-            // 
-            this.cbEstatus.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbEstatus.FormattingEnabled = true;
-            this.cbEstatus.Location = new System.Drawing.Point(15, 236);
-            this.cbEstatus.Name = "cbEstatus";
-            this.cbEstatus.Size = new System.Drawing.Size(289, 37);
-            this.cbEstatus.TabIndex = 38;
-            // 
-            // cbFraccionArancelaria
-            // 
-            this.cbFraccionArancelaria.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbFraccionArancelaria.FormattingEnabled = true;
-            this.cbFraccionArancelaria.Location = new System.Drawing.Point(400, 236);
-            this.cbFraccionArancelaria.Name = "cbFraccionArancelaria";
-            this.cbFraccionArancelaria.Size = new System.Drawing.Size(289, 37);
-            this.cbFraccionArancelaria.TabIndex = 43;
-            // 
-            // cbUnidadesMedidaC
-            // 
-            this.cbUnidadesMedidaC.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbUnidadesMedidaC.FormattingEnabled = true;
-            this.cbUnidadesMedidaC.Location = new System.Drawing.Point(770, 236);
-            this.cbUnidadesMedidaC.Name = "cbUnidadesMedidaC";
-            this.cbUnidadesMedidaC.Size = new System.Drawing.Size(289, 37);
-            this.cbUnidadesMedidaC.TabIndex = 44;
-            this.cbUnidadesMedidaC.SelectedIndexChanged += new System.EventHandler(this.cbUnidadesMedidaC_SelectedIndexChanged);
-            // 
-            // cbUnidadesMedidaT
-            // 
-            this.cbUnidadesMedidaT.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbUnidadesMedidaT.FormattingEnabled = true;
-            this.cbUnidadesMedidaT.Location = new System.Drawing.Point(15, 393);
-            this.cbUnidadesMedidaT.Name = "cbUnidadesMedidaT";
-            this.cbUnidadesMedidaT.Size = new System.Drawing.Size(289, 37);
-            this.cbUnidadesMedidaT.TabIndex = 45;
-            // 
-            // cbPlantasBodegas
-            // 
-            this.cbPlantasBodegas.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbPlantasBodegas.FormattingEnabled = true;
-            this.cbPlantasBodegas.Location = new System.Drawing.Point(770, 393);
-            this.cbPlantasBodegas.Name = "cbPlantasBodegas";
-            this.cbPlantasBodegas.Size = new System.Drawing.Size(289, 37);
-            this.cbPlantasBodegas.TabIndex = 46;
             // 
             // Cat_ProductosView
             // 

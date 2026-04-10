@@ -112,6 +112,9 @@
     <EmbeddedResource Include="Views\Cat_ProductosView.resx">
       <DependentUpon>Cat_ProductosView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cat_ProveedoresView.resx">
+      <DependentUpon>Cat_ProveedoresView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\DashBoardView.resx">
       <DependentUpon>DashBoardView.cs</DependentUpon>
     </EmbeddedResource>

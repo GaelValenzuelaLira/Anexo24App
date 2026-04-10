@@ -1,6 +1,6 @@
 ﻿namespace Anexo24App.Views
 {
-    partial class Cat_ProveedoresView
+    partial class Cat_Proveedores
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,486 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.panelTitulo = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.tabControlDGC = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panelAddRefresh = new System.Windows.Forms.Panel();
+            this.panelBusquedas = new System.Windows.Forms.Panel();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.dataGridViewDGC = new System.Windows.Forms.DataGridView();
+            this.tabPageDetalles = new System.Windows.Forms.TabPage();
+            this.panelDatos = new System.Windows.Forms.Panel();
+            this.cbPlantasBodegas = new System.Windows.Forms.ComboBox();
+            this.cbUnidadesMedidaT = new System.Windows.Forms.ComboBox();
+            this.cbUnidadesMedidaC = new System.Windows.Forms.ComboBox();
+            this.cbFraccionArancelaria = new System.Windows.Forms.ComboBox();
+            this.cbEstatus = new System.Windows.Forms.ComboBox();
+            this.lblPlantasBodegas = new System.Windows.Forms.Label();
+            this.lblUMTigie = new System.Windows.Forms.Label();
+            this.lblUMComercializacion = new System.Windows.Forms.Label();
+            this.lblFraccionArancelaria = new System.Windows.Forms.Label();
+            this.lblEstatus = new System.Windows.Forms.Label();
+            this.txtNumeroProgramaIMMEX = new System.Windows.Forms.TextBox();
+            this.lblFactorConversion = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.txtClave = new System.Windows.Forms.TextBox();
+            this.lblClave = new System.Windows.Forms.Label();
+            this.panelOpciones = new System.Windows.Forms.Panel();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.panelTituloDetalles = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.btnRefresh = new FontAwesome.Sharp.IconButton();
+            this.btnAdd = new FontAwesome.Sharp.IconButton();
+            this.panelTitulo.SuspendLayout();
+            this.tabControlDGC.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panelAddRefresh.SuspendLayout();
+            this.panelBusquedas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDGC)).BeginInit();
+            this.tabPageDetalles.SuspendLayout();
+            this.panelDatos.SuspendLayout();
+            this.panelOpciones.SuspendLayout();
+            this.panelTituloDetalles.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelTitulo
+            // 
+            this.panelTitulo.BackColor = System.Drawing.Color.White;
+            this.panelTitulo.Controls.Add(this.lblTitulo);
+            this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitulo.Location = new System.Drawing.Point(0, 0);
+            this.panelTitulo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTitulo.Name = "panelTitulo";
+            this.panelTitulo.Size = new System.Drawing.Size(1138, 47);
+            this.panelTitulo.TabIndex = 0;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblTitulo.Location = new System.Drawing.Point(2, 9);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(154, 29);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Proveedores";
+            // 
+            // tabControlDGC
+            // 
+            this.tabControlDGC.Controls.Add(this.tabPage1);
+            this.tabControlDGC.Controls.Add(this.tabPageDetalles);
+            this.tabControlDGC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlDGC.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlDGC.Location = new System.Drawing.Point(0, 47);
+            this.tabControlDGC.Name = "tabControlDGC";
+            this.tabControlDGC.SelectedIndex = 0;
+            this.tabControlDGC.Size = new System.Drawing.Size(1138, 640);
+            this.tabControlDGC.TabIndex = 1;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.panelAddRefresh);
+            this.tabPage1.Controls.Add(this.panelBusquedas);
+            this.tabPage1.Controls.Add(this.dataGridViewDGC);
+            this.tabPage1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Location = new System.Drawing.Point(4, 33);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1130, 603);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Vista";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panelAddRefresh
+            // 
+            this.panelAddRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelAddRefresh.Controls.Add(this.btnRefresh);
+            this.panelAddRefresh.Controls.Add(this.btnAdd);
+            this.panelAddRefresh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelAddRefresh.Location = new System.Drawing.Point(3, 40);
+            this.panelAddRefresh.Name = "panelAddRefresh";
+            this.panelAddRefresh.Size = new System.Drawing.Size(1124, 54);
+            this.panelAddRefresh.TabIndex = 2;
+            // 
+            // panelBusquedas
+            // 
+            this.panelBusquedas.Controls.Add(this.txtBusqueda);
+            this.panelBusquedas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBusquedas.Location = new System.Drawing.Point(3, 3);
+            this.panelBusquedas.Name = "panelBusquedas";
+            this.panelBusquedas.Size = new System.Drawing.Size(1124, 37);
+            this.panelBusquedas.TabIndex = 1;
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtBusqueda.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(0, 0);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(1124, 35);
+            this.txtBusqueda.TabIndex = 1;
+            // 
+            // dataGridViewDGC
+            // 
+            this.dataGridViewDGC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewDGC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDGC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewDGC.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewDGC.Name = "dataGridViewDGC";
+            this.dataGridViewDGC.RowHeadersWidth = 51;
+            this.dataGridViewDGC.Size = new System.Drawing.Size(1124, 597);
+            this.dataGridViewDGC.TabIndex = 0;
+            // 
+            // tabPageDetalles
+            // 
+            this.tabPageDetalles.Controls.Add(this.panelDatos);
+            this.tabPageDetalles.Controls.Add(this.panelOpciones);
+            this.tabPageDetalles.Controls.Add(this.panelTituloDetalles);
+            this.tabPageDetalles.Location = new System.Drawing.Point(4, 33);
+            this.tabPageDetalles.Name = "tabPageDetalles";
+            this.tabPageDetalles.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDetalles.Size = new System.Drawing.Size(1130, 603);
+            this.tabPageDetalles.TabIndex = 1;
+            this.tabPageDetalles.Text = "Detalles";
+            this.tabPageDetalles.UseVisualStyleBackColor = true;
+            // 
+            // panelDatos
+            // 
+            this.panelDatos.Controls.Add(this.cbPlantasBodegas);
+            this.panelDatos.Controls.Add(this.cbUnidadesMedidaT);
+            this.panelDatos.Controls.Add(this.cbUnidadesMedidaC);
+            this.panelDatos.Controls.Add(this.cbFraccionArancelaria);
+            this.panelDatos.Controls.Add(this.cbEstatus);
+            this.panelDatos.Controls.Add(this.lblPlantasBodegas);
+            this.panelDatos.Controls.Add(this.lblUMTigie);
+            this.panelDatos.Controls.Add(this.lblUMComercializacion);
+            this.panelDatos.Controls.Add(this.lblFraccionArancelaria);
+            this.panelDatos.Controls.Add(this.lblEstatus);
+            this.panelDatos.Controls.Add(this.txtNumeroProgramaIMMEX);
+            this.panelDatos.Controls.Add(this.lblFactorConversion);
+            this.panelDatos.Controls.Add(this.txtDescripcion);
+            this.panelDatos.Controls.Add(this.lblDescripcion);
+            this.panelDatos.Controls.Add(this.txtClave);
+            this.panelDatos.Controls.Add(this.lblClave);
+            this.panelDatos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDatos.Location = new System.Drawing.Point(3, 50);
+            this.panelDatos.Name = "panelDatos";
+            this.panelDatos.Size = new System.Drawing.Size(1124, 466);
+            this.panelDatos.TabIndex = 20;
+            // 
+            // cbPlantasBodegas
+            // 
+            this.cbPlantasBodegas.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPlantasBodegas.FormattingEnabled = true;
+            this.cbPlantasBodegas.Location = new System.Drawing.Point(770, 393);
+            this.cbPlantasBodegas.Name = "cbPlantasBodegas";
+            this.cbPlantasBodegas.Size = new System.Drawing.Size(289, 37);
+            this.cbPlantasBodegas.TabIndex = 46;
+            // 
+            // cbUnidadesMedidaT
+            // 
+            this.cbUnidadesMedidaT.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUnidadesMedidaT.FormattingEnabled = true;
+            this.cbUnidadesMedidaT.Location = new System.Drawing.Point(15, 393);
+            this.cbUnidadesMedidaT.Name = "cbUnidadesMedidaT";
+            this.cbUnidadesMedidaT.Size = new System.Drawing.Size(289, 37);
+            this.cbUnidadesMedidaT.TabIndex = 45;
+            // 
+            // cbUnidadesMedidaC
+            // 
+            this.cbUnidadesMedidaC.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUnidadesMedidaC.FormattingEnabled = true;
+            this.cbUnidadesMedidaC.Location = new System.Drawing.Point(770, 236);
+            this.cbUnidadesMedidaC.Name = "cbUnidadesMedidaC";
+            this.cbUnidadesMedidaC.Size = new System.Drawing.Size(289, 37);
+            this.cbUnidadesMedidaC.TabIndex = 44;
+            // 
+            // cbFraccionArancelaria
+            // 
+            this.cbFraccionArancelaria.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFraccionArancelaria.FormattingEnabled = true;
+            this.cbFraccionArancelaria.Location = new System.Drawing.Point(400, 236);
+            this.cbFraccionArancelaria.Name = "cbFraccionArancelaria";
+            this.cbFraccionArancelaria.Size = new System.Drawing.Size(289, 37);
+            this.cbFraccionArancelaria.TabIndex = 43;
+            // 
+            // cbEstatus
+            // 
+            this.cbEstatus.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEstatus.FormattingEnabled = true;
+            this.cbEstatus.Location = new System.Drawing.Point(15, 236);
+            this.cbEstatus.Name = "cbEstatus";
+            this.cbEstatus.Size = new System.Drawing.Size(289, 37);
+            this.cbEstatus.TabIndex = 38;
+            // 
+            // lblPlantasBodegas
+            // 
+            this.lblPlantasBodegas.AutoSize = true;
+            this.lblPlantasBodegas.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlantasBodegas.Location = new System.Drawing.Point(730, 356);
+            this.lblPlantasBodegas.Name = "lblPlantasBodegas";
+            this.lblPlantasBodegas.Size = new System.Drawing.Size(378, 29);
+            this.lblPlantasBodegas.TabIndex = 33;
+            this.lblPlantasBodegas.Text = "8. Planta/Bodega donde se ubica:";
+            // 
+            // lblUMTigie
+            // 
+            this.lblUMTigie.AutoSize = true;
+            this.lblUMTigie.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUMTigie.Location = new System.Drawing.Point(10, 356);
+            this.lblUMTigie.Name = "lblUMTigie";
+            this.lblUMTigie.Size = new System.Drawing.Size(157, 29);
+            this.lblUMTigie.TabIndex = 31;
+            this.lblUMTigie.Text = "7. U.M TIGIE:";
+            // 
+            // lblUMComercializacion
+            // 
+            this.lblUMComercializacion.AutoSize = true;
+            this.lblUMComercializacion.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUMComercializacion.Location = new System.Drawing.Point(763, 197);
+            this.lblUMComercializacion.Name = "lblUMComercializacion";
+            this.lblUMComercializacion.Size = new System.Drawing.Size(284, 29);
+            this.lblUMComercializacion.TabIndex = 29;
+            this.lblUMComercializacion.Text = "6. U.M Comercializacion:";
+            // 
+            // lblFraccionArancelaria
+            // 
+            this.lblFraccionArancelaria.AutoSize = true;
+            this.lblFraccionArancelaria.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFraccionArancelaria.Location = new System.Drawing.Point(394, 197);
+            this.lblFraccionArancelaria.Name = "lblFraccionArancelaria";
+            this.lblFraccionArancelaria.Size = new System.Drawing.Size(272, 29);
+            this.lblFraccionArancelaria.TabIndex = 27;
+            this.lblFraccionArancelaria.Text = "5. Fraccion Arancelaria:";
+            // 
+            // lblEstatus
+            // 
+            this.lblEstatus.AutoSize = true;
+            this.lblEstatus.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstatus.Location = new System.Drawing.Point(10, 197);
+            this.lblEstatus.Name = "lblEstatus";
+            this.lblEstatus.Size = new System.Drawing.Size(130, 29);
+            this.lblEstatus.TabIndex = 25;
+            this.lblEstatus.Text = "4. Estatus:";
+            // 
+            // txtNumeroProgramaIMMEX
+            // 
+            this.txtNumeroProgramaIMMEX.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroProgramaIMMEX.Location = new System.Drawing.Point(769, 76);
+            this.txtNumeroProgramaIMMEX.Name = "txtNumeroProgramaIMMEX";
+            this.txtNumeroProgramaIMMEX.Size = new System.Drawing.Size(288, 35);
+            this.txtNumeroProgramaIMMEX.TabIndex = 24;
+            // 
+            // lblFactorConversion
+            // 
+            this.lblFactorConversion.AutoSize = true;
+            this.lblFactorConversion.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFactorConversion.Location = new System.Drawing.Point(764, 37);
+            this.lblFactorConversion.Name = "lblFactorConversion";
+            this.lblFactorConversion.Size = new System.Drawing.Size(276, 29);
+            this.lblFactorConversion.TabIndex = 23;
+            this.lblFactorConversion.Text = "3. Factor de conversion:";
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(400, 76);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(288, 35);
+            this.txtDescripcion.TabIndex = 22;
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(394, 37);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(175, 29);
+            this.lblDescripcion.TabIndex = 21;
+            this.lblDescripcion.Text = "2. Descripcion:";
+            // 
+            // txtClave
+            // 
+            this.txtClave.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClave.Location = new System.Drawing.Point(10, 76);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(288, 35);
+            this.txtClave.TabIndex = 20;
+            // 
+            // lblClave
+            // 
+            this.lblClave.AutoSize = true;
+            this.lblClave.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClave.Location = new System.Drawing.Point(10, 37);
+            this.lblClave.Name = "lblClave";
+            this.lblClave.Size = new System.Drawing.Size(110, 29);
+            this.lblClave.TabIndex = 19;
+            this.lblClave.Text = "1. Clave:";
+            // 
+            // panelOpciones
+            // 
+            this.panelOpciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelOpciones.Controls.Add(this.btnCancel);
+            this.panelOpciones.Controls.Add(this.btnSave);
+            this.panelOpciones.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelOpciones.Location = new System.Drawing.Point(3, 516);
+            this.panelOpciones.Name = "panelOpciones";
+            this.panelOpciones.Size = new System.Drawing.Size(1124, 84);
+            this.panelOpciones.TabIndex = 19;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(996, 0);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(128, 84);
+            this.btnCancel.TabIndex = 1;
+            this.btnCancel.Text = "Cancelar";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(0, 0);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(128, 84);
+            this.btnSave.TabIndex = 0;
+            this.btnSave.Text = "Guardar cambios";
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // panelTituloDetalles
+            // 
+            this.panelTituloDetalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelTituloDetalles.Controls.Add(this.label1);
+            this.panelTituloDetalles.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTituloDetalles.Location = new System.Drawing.Point(3, 3);
+            this.panelTituloDetalles.Name = "panelTituloDetalles";
+            this.panelTituloDetalles.Size = new System.Drawing.Size(1124, 47);
+            this.panelTituloDetalles.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(6, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(539, 27);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Recuerda siempre \"Guardar cambios\" si realizas alguno.";
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.White;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnRefresh.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Repeat;
+            this.btnRefresh.IconColor = System.Drawing.Color.Black;
+            this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnRefresh.IconSize = 40;
+            this.btnRefresh.Location = new System.Drawing.Point(1053, 0);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(71, 54);
+            this.btnRefresh.TabIndex = 1;
+            this.toolTip.SetToolTip(this.btnRefresh, "Refresca datos");
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAdd.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
+            this.btnAdd.IconColor = System.Drawing.Color.Black;
+            this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnAdd.IconSize = 40;
+            this.btnAdd.Location = new System.Drawing.Point(0, 0);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(71, 54);
+            this.btnAdd.TabIndex = 0;
+            this.toolTip.SetToolTip(this.btnAdd, "Agrega un nuevo registro");
+            this.btnAdd.UseVisualStyleBackColor = false;
+            // 
+            // Cat_Proveedores
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Cat_ProveedoresView";
+            this.ClientSize = new System.Drawing.Size(1138, 687);
+            this.Controls.Add(this.tabControlDGC);
+            this.Controls.Add(this.panelTitulo);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Cat_Proveedores";
+            this.Text = "Cat_Productos";
+            this.panelTitulo.ResumeLayout(false);
+            this.panelTitulo.PerformLayout();
+            this.tabControlDGC.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.panelAddRefresh.ResumeLayout(false);
+            this.panelBusquedas.ResumeLayout(false);
+            this.panelBusquedas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDGC)).EndInit();
+            this.tabPageDetalles.ResumeLayout(false);
+            this.panelDatos.ResumeLayout(false);
+            this.panelDatos.PerformLayout();
+            this.panelOpciones.ResumeLayout(false);
+            this.panelTituloDetalles.ResumeLayout(false);
+            this.panelTituloDetalles.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelTitulo;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.TabControl tabControlDGC;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPageDetalles;
+        private System.Windows.Forms.DataGridView dataGridViewDGC;
+        private System.Windows.Forms.Panel panelBusquedas;
+        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Panel panelAddRefresh;
+        private FontAwesome.Sharp.IconButton btnAdd;
+        private FontAwesome.Sharp.IconButton btnRefresh;
+        private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Panel panelTituloDetalles;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelOpciones;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Panel panelDatos;
+        private System.Windows.Forms.Label lblPlantasBodegas;
+        private System.Windows.Forms.Label lblUMTigie;
+        private System.Windows.Forms.Label lblUMComercializacion;
+        private System.Windows.Forms.Label lblFraccionArancelaria;
+        private System.Windows.Forms.Label lblEstatus;
+        private System.Windows.Forms.TextBox txtNumeroProgramaIMMEX;
+        private System.Windows.Forms.Label lblFactorConversion;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.TextBox txtClave;
+        private System.Windows.Forms.Label lblClave;
+        private System.Windows.Forms.ComboBox cbEstatus;
+        private System.Windows.Forms.ComboBox cbFraccionArancelaria;
+        private System.Windows.Forms.ComboBox cbUnidadesMedidaC;
+        private System.Windows.Forms.ComboBox cbUnidadesMedidaT;
+        private System.Windows.Forms.ComboBox cbPlantasBodegas;
     }
 }

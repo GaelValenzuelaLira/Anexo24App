@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Anexo24App.Views
 {
-    public partial class Cat_ProveedoresView : Form
+    public partial class Cat_Proveedores : Form
     {
-        public Cat_ProveedoresView()
+        public Cat_Proveedores()
         {
             InitializeComponent();
         }

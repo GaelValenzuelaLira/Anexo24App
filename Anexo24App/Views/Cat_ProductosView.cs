@@ -26,5 +26,10 @@ namespace Anexo24App.Views
         {
 
         }
+
+        private void dataGridViewDGC_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
