@@ -39,24 +39,17 @@
             this.dataGridViewDGC = new System.Windows.Forms.DataGridView();
             this.tabPageDetalles = new System.Windows.Forms.TabPage();
             this.panelDatos = new System.Windows.Forms.Panel();
-            this.txtMunicipio = new System.Windows.Forms.TextBox();
-            this.lblMunicipio = new System.Windows.Forms.Label();
-            this.txtEntidadFederativa = new System.Windows.Forms.TextBox();
-            this.lblEntidadFederativa = new System.Windows.Forms.Label();
-            this.txtColonia = new System.Windows.Forms.TextBox();
-            this.lblColonia = new System.Windows.Forms.Label();
-            this.txtCP = new System.Windows.Forms.TextBox();
-            this.lblCP = new System.Windows.Forms.Label();
-            this.txtNumero = new System.Windows.Forms.TextBox();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.txtCalle = new System.Windows.Forms.TextBox();
-            this.lblCalle = new System.Windows.Forms.Label();
+            this.lblPlantasBodegas = new System.Windows.Forms.Label();
+            this.lblUMTigie = new System.Windows.Forms.Label();
+            this.lblUMComercializacion = new System.Windows.Forms.Label();
+            this.lblFraccionArancelaria = new System.Windows.Forms.Label();
+            this.lblEstatus = new System.Windows.Forms.Label();
             this.txtNumeroProgramaIMMEX = new System.Windows.Forms.TextBox();
-            this.lblNumeroProgramaIMMEX = new System.Windows.Forms.Label();
-            this.txtRFC = new System.Windows.Forms.TextBox();
-            this.lblRFC = new System.Windows.Forms.Label();
-            this.txtRazonSocial = new System.Windows.Forms.TextBox();
-            this.lblRazonSocial = new System.Windows.Forms.Label();
+            this.lblFactorConversion = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.txtClave = new System.Windows.Forms.TextBox();
+            this.lblClave = new System.Windows.Forms.Label();
             this.panelOpciones = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -65,6 +58,11 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.btnRefresh = new FontAwesome.Sharp.IconButton();
             this.btnAdd = new FontAwesome.Sharp.IconButton();
+            this.cbEstatus = new System.Windows.Forms.ComboBox();
+            this.cbFraccionArancelaria = new System.Windows.Forms.ComboBox();
+            this.cbUnidadesMedidaC = new System.Windows.Forms.ComboBox();
+            this.cbUnidadesMedidaT = new System.Windows.Forms.ComboBox();
+            this.cbPlantasBodegas = new System.Windows.Forms.ComboBox();
             this.panelTitulo.SuspendLayout();
             this.tabControlDGC.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -181,137 +179,78 @@
             // 
             // panelDatos
             // 
-            this.panelDatos.Controls.Add(this.txtMunicipio);
-            this.panelDatos.Controls.Add(this.lblMunicipio);
-            this.panelDatos.Controls.Add(this.txtEntidadFederativa);
-            this.panelDatos.Controls.Add(this.lblEntidadFederativa);
-            this.panelDatos.Controls.Add(this.txtColonia);
-            this.panelDatos.Controls.Add(this.lblColonia);
-            this.panelDatos.Controls.Add(this.txtCP);
-            this.panelDatos.Controls.Add(this.lblCP);
-            this.panelDatos.Controls.Add(this.txtNumero);
-            this.panelDatos.Controls.Add(this.lblNumero);
-            this.panelDatos.Controls.Add(this.txtCalle);
-            this.panelDatos.Controls.Add(this.lblCalle);
+            this.panelDatos.Controls.Add(this.cbPlantasBodegas);
+            this.panelDatos.Controls.Add(this.cbUnidadesMedidaT);
+            this.panelDatos.Controls.Add(this.cbUnidadesMedidaC);
+            this.panelDatos.Controls.Add(this.cbFraccionArancelaria);
+            this.panelDatos.Controls.Add(this.cbEstatus);
+            this.panelDatos.Controls.Add(this.lblPlantasBodegas);
+            this.panelDatos.Controls.Add(this.lblUMTigie);
+            this.panelDatos.Controls.Add(this.lblUMComercializacion);
+            this.panelDatos.Controls.Add(this.lblFraccionArancelaria);
+            this.panelDatos.Controls.Add(this.lblEstatus);
             this.panelDatos.Controls.Add(this.txtNumeroProgramaIMMEX);
-            this.panelDatos.Controls.Add(this.lblNumeroProgramaIMMEX);
-            this.panelDatos.Controls.Add(this.txtRFC);
-            this.panelDatos.Controls.Add(this.lblRFC);
-            this.panelDatos.Controls.Add(this.txtRazonSocial);
-            this.panelDatos.Controls.Add(this.lblRazonSocial);
+            this.panelDatos.Controls.Add(this.lblFactorConversion);
+            this.panelDatos.Controls.Add(this.txtDescripcion);
+            this.panelDatos.Controls.Add(this.lblDescripcion);
+            this.panelDatos.Controls.Add(this.txtClave);
+            this.panelDatos.Controls.Add(this.lblClave);
             this.panelDatos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDatos.Location = new System.Drawing.Point(3, 50);
             this.panelDatos.Name = "panelDatos";
             this.panelDatos.Size = new System.Drawing.Size(1124, 466);
             this.panelDatos.TabIndex = 20;
+            this.panelDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDatos_Paint);
             // 
-            // txtMunicipio
+            // lblPlantasBodegas
             // 
-            this.txtMunicipio.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMunicipio.Location = new System.Drawing.Point(770, 395);
-            this.txtMunicipio.Name = "txtMunicipio";
-            this.txtMunicipio.Size = new System.Drawing.Size(288, 35);
-            this.txtMunicipio.TabIndex = 36;
+            this.lblPlantasBodegas.AutoSize = true;
+            this.lblPlantasBodegas.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlantasBodegas.Location = new System.Drawing.Point(730, 356);
+            this.lblPlantasBodegas.Name = "lblPlantasBodegas";
+            this.lblPlantasBodegas.Size = new System.Drawing.Size(378, 29);
+            this.lblPlantasBodegas.TabIndex = 33;
+            this.lblPlantasBodegas.Text = "8. Planta/Bodega donde se ubica:";
             // 
-            // lblMunicipio
+            // lblUMTigie
             // 
-            this.lblMunicipio.AutoSize = true;
-            this.lblMunicipio.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMunicipio.Location = new System.Drawing.Point(764, 356);
-            this.lblMunicipio.Name = "lblMunicipio";
-            this.lblMunicipio.Size = new System.Drawing.Size(153, 29);
-            this.lblMunicipio.TabIndex = 35;
-            this.lblMunicipio.Text = "9. Municipio:";
+            this.lblUMTigie.AutoSize = true;
+            this.lblUMTigie.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUMTigie.Location = new System.Drawing.Point(10, 356);
+            this.lblUMTigie.Name = "lblUMTigie";
+            this.lblUMTigie.Size = new System.Drawing.Size(157, 29);
+            this.lblUMTigie.TabIndex = 31;
+            this.lblUMTigie.Text = "7. U.M TIGIE:";
             // 
-            // txtEntidadFederativa
+            // lblUMComercializacion
             // 
-            this.txtEntidadFederativa.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEntidadFederativa.Location = new System.Drawing.Point(400, 395);
-            this.txtEntidadFederativa.Name = "txtEntidadFederativa";
-            this.txtEntidadFederativa.Size = new System.Drawing.Size(288, 35);
-            this.txtEntidadFederativa.TabIndex = 34;
+            this.lblUMComercializacion.AutoSize = true;
+            this.lblUMComercializacion.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUMComercializacion.Location = new System.Drawing.Point(763, 197);
+            this.lblUMComercializacion.Name = "lblUMComercializacion";
+            this.lblUMComercializacion.Size = new System.Drawing.Size(284, 29);
+            this.lblUMComercializacion.TabIndex = 29;
+            this.lblUMComercializacion.Text = "6. U.M Comercializacion:";
             // 
-            // lblEntidadFederativa
+            // lblFraccionArancelaria
             // 
-            this.lblEntidadFederativa.AutoSize = true;
-            this.lblEntidadFederativa.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEntidadFederativa.Location = new System.Drawing.Point(394, 356);
-            this.lblEntidadFederativa.Name = "lblEntidadFederativa";
-            this.lblEntidadFederativa.Size = new System.Drawing.Size(252, 29);
-            this.lblEntidadFederativa.TabIndex = 33;
-            this.lblEntidadFederativa.Text = "8. Entidad federativa:";
+            this.lblFraccionArancelaria.AutoSize = true;
+            this.lblFraccionArancelaria.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFraccionArancelaria.Location = new System.Drawing.Point(394, 197);
+            this.lblFraccionArancelaria.Name = "lblFraccionArancelaria";
+            this.lblFraccionArancelaria.Size = new System.Drawing.Size(272, 29);
+            this.lblFraccionArancelaria.TabIndex = 27;
+            this.lblFraccionArancelaria.Text = "5. Fraccion Arancelaria:";
             // 
-            // txtColonia
+            // lblEstatus
             // 
-            this.txtColonia.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtColonia.Location = new System.Drawing.Point(16, 395);
-            this.txtColonia.Name = "txtColonia";
-            this.txtColonia.Size = new System.Drawing.Size(288, 35);
-            this.txtColonia.TabIndex = 32;
-            // 
-            // lblColonia
-            // 
-            this.lblColonia.AutoSize = true;
-            this.lblColonia.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColonia.Location = new System.Drawing.Point(10, 356);
-            this.lblColonia.Name = "lblColonia";
-            this.lblColonia.Size = new System.Drawing.Size(131, 29);
-            this.lblColonia.TabIndex = 31;
-            this.lblColonia.Text = "7. Colonia:";
-            // 
-            // txtCP
-            // 
-            this.txtCP.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCP.Location = new System.Drawing.Point(769, 236);
-            this.txtCP.Name = "txtCP";
-            this.txtCP.Size = new System.Drawing.Size(288, 35);
-            this.txtCP.TabIndex = 30;
-            // 
-            // lblCP
-            // 
-            this.lblCP.AutoSize = true;
-            this.lblCP.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCP.Location = new System.Drawing.Point(763, 197);
-            this.lblCP.Name = "lblCP";
-            this.lblCP.Size = new System.Drawing.Size(78, 29);
-            this.lblCP.TabIndex = 29;
-            this.lblCP.Text = "6. CP:";
-            // 
-            // txtNumero
-            // 
-            this.txtNumero.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero.Location = new System.Drawing.Point(400, 236);
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(288, 35);
-            this.txtNumero.TabIndex = 28;
-            // 
-            // lblNumero
-            // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(394, 197);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(134, 29);
-            this.lblNumero.TabIndex = 27;
-            this.lblNumero.Text = "5. Número:";
-            // 
-            // txtCalle
-            // 
-            this.txtCalle.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCalle.Location = new System.Drawing.Point(15, 236);
-            this.txtCalle.Name = "txtCalle";
-            this.txtCalle.Size = new System.Drawing.Size(288, 35);
-            this.txtCalle.TabIndex = 26;
-            // 
-            // lblCalle
-            // 
-            this.lblCalle.AutoSize = true;
-            this.lblCalle.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCalle.Location = new System.Drawing.Point(10, 197);
-            this.lblCalle.Name = "lblCalle";
-            this.lblCalle.Size = new System.Drawing.Size(105, 29);
-            this.lblCalle.TabIndex = 25;
-            this.lblCalle.Text = "4. Calle:";
+            this.lblEstatus.AutoSize = true;
+            this.lblEstatus.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstatus.Location = new System.Drawing.Point(10, 197);
+            this.lblEstatus.Name = "lblEstatus";
+            this.lblEstatus.Size = new System.Drawing.Size(130, 29);
+            this.lblEstatus.TabIndex = 25;
+            this.lblEstatus.Text = "4. Estatus:";
             // 
             // txtNumeroProgramaIMMEX
             // 
@@ -321,51 +260,51 @@
             this.txtNumeroProgramaIMMEX.Size = new System.Drawing.Size(288, 35);
             this.txtNumeroProgramaIMMEX.TabIndex = 24;
             // 
-            // lblNumeroProgramaIMMEX
+            // lblFactorConversion
             // 
-            this.lblNumeroProgramaIMMEX.AutoSize = true;
-            this.lblNumeroProgramaIMMEX.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroProgramaIMMEX.Location = new System.Drawing.Point(764, 37);
-            this.lblNumeroProgramaIMMEX.Name = "lblNumeroProgramaIMMEX";
-            this.lblNumeroProgramaIMMEX.Size = new System.Drawing.Size(350, 29);
-            this.lblNumeroProgramaIMMEX.TabIndex = 23;
-            this.lblNumeroProgramaIMMEX.Text = "3. Número de programa IMMEX:";
+            this.lblFactorConversion.AutoSize = true;
+            this.lblFactorConversion.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFactorConversion.Location = new System.Drawing.Point(764, 37);
+            this.lblFactorConversion.Name = "lblFactorConversion";
+            this.lblFactorConversion.Size = new System.Drawing.Size(276, 29);
+            this.lblFactorConversion.TabIndex = 23;
+            this.lblFactorConversion.Text = "3. Factor de conversion:";
             // 
-            // txtRFC
+            // txtDescripcion
             // 
-            this.txtRFC.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRFC.Location = new System.Drawing.Point(400, 76);
-            this.txtRFC.Name = "txtRFC";
-            this.txtRFC.Size = new System.Drawing.Size(288, 35);
-            this.txtRFC.TabIndex = 22;
+            this.txtDescripcion.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(400, 76);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(288, 35);
+            this.txtDescripcion.TabIndex = 22;
             // 
-            // lblRFC
+            // lblDescripcion
             // 
-            this.lblRFC.AutoSize = true;
-            this.lblRFC.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRFC.Location = new System.Drawing.Point(394, 37);
-            this.lblRFC.Name = "lblRFC";
-            this.lblRFC.Size = new System.Drawing.Size(92, 29);
-            this.lblRFC.TabIndex = 21;
-            this.lblRFC.Text = "2. RFC:";
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(394, 37);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(175, 29);
+            this.lblDescripcion.TabIndex = 21;
+            this.lblDescripcion.Text = "2. Descripcion:";
             // 
-            // txtRazonSocial
+            // txtClave
             // 
-            this.txtRazonSocial.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRazonSocial.Location = new System.Drawing.Point(10, 76);
-            this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Size = new System.Drawing.Size(288, 35);
-            this.txtRazonSocial.TabIndex = 20;
+            this.txtClave.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClave.Location = new System.Drawing.Point(10, 76);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(288, 35);
+            this.txtClave.TabIndex = 20;
             // 
-            // lblRazonSocial
+            // lblClave
             // 
-            this.lblRazonSocial.AutoSize = true;
-            this.lblRazonSocial.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRazonSocial.Location = new System.Drawing.Point(10, 37);
-            this.lblRazonSocial.Name = "lblRazonSocial";
-            this.lblRazonSocial.Size = new System.Drawing.Size(186, 29);
-            this.lblRazonSocial.TabIndex = 19;
-            this.lblRazonSocial.Text = "1. Razon Social:";
+            this.lblClave.AutoSize = true;
+            this.lblClave.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClave.Location = new System.Drawing.Point(10, 37);
+            this.lblClave.Name = "lblClave";
+            this.lblClave.Size = new System.Drawing.Size(110, 29);
+            this.lblClave.TabIndex = 19;
+            this.lblClave.Text = "1. Clave:";
             // 
             // panelOpciones
             // 
@@ -463,6 +402,52 @@
             this.toolTip.SetToolTip(this.btnAdd, "Agrega un nuevo registro");
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
+            // cbEstatus
+            // 
+            this.cbEstatus.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEstatus.FormattingEnabled = true;
+            this.cbEstatus.Location = new System.Drawing.Point(15, 236);
+            this.cbEstatus.Name = "cbEstatus";
+            this.cbEstatus.Size = new System.Drawing.Size(289, 37);
+            this.cbEstatus.TabIndex = 38;
+            // 
+            // cbFraccionArancelaria
+            // 
+            this.cbFraccionArancelaria.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFraccionArancelaria.FormattingEnabled = true;
+            this.cbFraccionArancelaria.Location = new System.Drawing.Point(400, 236);
+            this.cbFraccionArancelaria.Name = "cbFraccionArancelaria";
+            this.cbFraccionArancelaria.Size = new System.Drawing.Size(289, 37);
+            this.cbFraccionArancelaria.TabIndex = 43;
+            // 
+            // cbUnidadesMedidaC
+            // 
+            this.cbUnidadesMedidaC.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUnidadesMedidaC.FormattingEnabled = true;
+            this.cbUnidadesMedidaC.Location = new System.Drawing.Point(770, 236);
+            this.cbUnidadesMedidaC.Name = "cbUnidadesMedidaC";
+            this.cbUnidadesMedidaC.Size = new System.Drawing.Size(289, 37);
+            this.cbUnidadesMedidaC.TabIndex = 44;
+            this.cbUnidadesMedidaC.SelectedIndexChanged += new System.EventHandler(this.cbUnidadesMedidaC_SelectedIndexChanged);
+            // 
+            // cbUnidadesMedidaT
+            // 
+            this.cbUnidadesMedidaT.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUnidadesMedidaT.FormattingEnabled = true;
+            this.cbUnidadesMedidaT.Location = new System.Drawing.Point(15, 393);
+            this.cbUnidadesMedidaT.Name = "cbUnidadesMedidaT";
+            this.cbUnidadesMedidaT.Size = new System.Drawing.Size(289, 37);
+            this.cbUnidadesMedidaT.TabIndex = 45;
+            // 
+            // cbPlantasBodegas
+            // 
+            this.cbPlantasBodegas.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPlantasBodegas.FormattingEnabled = true;
+            this.cbPlantasBodegas.Location = new System.Drawing.Point(770, 393);
+            this.cbPlantasBodegas.Name = "cbPlantasBodegas";
+            this.cbPlantasBodegas.Size = new System.Drawing.Size(289, 37);
+            this.cbPlantasBodegas.TabIndex = 46;
+            // 
             // Cat_ProductosView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,23 +496,21 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Panel panelDatos;
-        private System.Windows.Forms.TextBox txtMunicipio;
-        private System.Windows.Forms.Label lblMunicipio;
-        private System.Windows.Forms.TextBox txtEntidadFederativa;
-        private System.Windows.Forms.Label lblEntidadFederativa;
-        private System.Windows.Forms.TextBox txtColonia;
-        private System.Windows.Forms.Label lblColonia;
-        private System.Windows.Forms.TextBox txtCP;
-        private System.Windows.Forms.Label lblCP;
-        private System.Windows.Forms.TextBox txtNumero;
-        private System.Windows.Forms.Label lblNumero;
-        private System.Windows.Forms.TextBox txtCalle;
-        private System.Windows.Forms.Label lblCalle;
+        private System.Windows.Forms.Label lblPlantasBodegas;
+        private System.Windows.Forms.Label lblUMTigie;
+        private System.Windows.Forms.Label lblUMComercializacion;
+        private System.Windows.Forms.Label lblFraccionArancelaria;
+        private System.Windows.Forms.Label lblEstatus;
         private System.Windows.Forms.TextBox txtNumeroProgramaIMMEX;
-        private System.Windows.Forms.Label lblNumeroProgramaIMMEX;
-        private System.Windows.Forms.TextBox txtRFC;
-        private System.Windows.Forms.Label lblRFC;
-        private System.Windows.Forms.TextBox txtRazonSocial;
-        private System.Windows.Forms.Label lblRazonSocial;
+        private System.Windows.Forms.Label lblFactorConversion;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.TextBox txtClave;
+        private System.Windows.Forms.Label lblClave;
+        private System.Windows.Forms.ComboBox cbEstatus;
+        private System.Windows.Forms.ComboBox cbFraccionArancelaria;
+        private System.Windows.Forms.ComboBox cbUnidadesMedidaC;
+        private System.Windows.Forms.ComboBox cbUnidadesMedidaT;
+        private System.Windows.Forms.ComboBox cbPlantasBodegas;
     }
 }

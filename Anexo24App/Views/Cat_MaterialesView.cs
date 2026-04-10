@@ -16,5 +16,10 @@ namespace Anexo24App.Views
         {
             InitializeComponent();
         }
+
+        private void panelDatos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
