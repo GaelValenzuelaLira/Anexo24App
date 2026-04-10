@@ -69,6 +69,12 @@
     <Compile Include="Views\Cat_MaterialesView.Designer.cs">
       <DependentUpon>Cat_MaterialesView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Cat_ProductosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Cat_ProductosView.Designer.cs">
+      <DependentUpon>Cat_ProductosView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\DashBoardView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cat_MaterialesView.resx">
       <DependentUpon>Cat_MaterialesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cat_ProductosView.resx">
+      <DependentUpon>Cat_ProductosView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DashBoardView.resx">
       <DependentUpon>DashBoardView.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace Anexo24App.Views
 {
-    partial class Cat_DatosContribuyenteView
+    partial class Cat_ProductosView
     {
         /// <summary>
         /// Required designer variable.
@@ -34,8 +34,6 @@
             this.tabControlDGC = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panelAddRefresh = new System.Windows.Forms.Panel();
-            this.btnRefresh = new FontAwesome.Sharp.IconButton();
-            this.btnAdd = new FontAwesome.Sharp.IconButton();
             this.panelBusquedas = new System.Windows.Forms.Panel();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.dataGridViewDGC = new System.Windows.Forms.DataGridView();
@@ -65,6 +63,8 @@
             this.panelTituloDetalles = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.btnRefresh = new FontAwesome.Sharp.IconButton();
+            this.btnAdd = new FontAwesome.Sharp.IconButton();
             this.panelTitulo.SuspendLayout();
             this.tabControlDGC.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -96,9 +96,9 @@
             this.lblTitulo.Location = new System.Drawing.Point(2, 9);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(405, 29);
+            this.lblTitulo.Size = new System.Drawing.Size(125, 29);
             this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Datos Generales del Contribuyente";
+            this.lblTitulo.Text = "Productos";
             // 
             // tabControlDGC
             // 
@@ -136,40 +136,6 @@
             this.panelAddRefresh.Name = "panelAddRefresh";
             this.panelAddRefresh.Size = new System.Drawing.Size(1124, 54);
             this.panelAddRefresh.TabIndex = 2;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.White;
-            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnRefresh.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Repeat;
-            this.btnRefresh.IconColor = System.Drawing.Color.Black;
-            this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnRefresh.IconSize = 40;
-            this.btnRefresh.Location = new System.Drawing.Point(1053, 0);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(71, 54);
-            this.btnRefresh.TabIndex = 1;
-            this.toolTip.SetToolTip(this.btnRefresh, "Refresca datos");
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.White;
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAdd.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            this.btnAdd.IconColor = System.Drawing.Color.Black;
-            this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnAdd.IconSize = 40;
-            this.btnAdd.Location = new System.Drawing.Point(0, 0);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(71, 54);
-            this.btnAdd.TabIndex = 0;
-            this.toolTip.SetToolTip(this.btnAdd, "Agrega un nuevo registro");
-            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // panelBusquedas
             // 
@@ -463,7 +429,41 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Recuerda siempre \"Guardar cambios\" si realizas alguno.";
             // 
-            // Cat_DatosContribuyenteView
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.White;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnRefresh.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Repeat;
+            this.btnRefresh.IconColor = System.Drawing.Color.Black;
+            this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnRefresh.IconSize = 40;
+            this.btnRefresh.Location = new System.Drawing.Point(1053, 0);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(71, 54);
+            this.btnRefresh.TabIndex = 1;
+            this.toolTip.SetToolTip(this.btnRefresh, "Refresca datos");
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAdd.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
+            this.btnAdd.IconColor = System.Drawing.Color.Black;
+            this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnAdd.IconSize = 40;
+            this.btnAdd.Location = new System.Drawing.Point(0, 0);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(71, 54);
+            this.btnAdd.TabIndex = 0;
+            this.toolTip.SetToolTip(this.btnAdd, "Agrega un nuevo registro");
+            this.btnAdd.UseVisualStyleBackColor = false;
+            // 
+            // Cat_ProductosView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -471,9 +471,8 @@
             this.Controls.Add(this.tabControlDGC);
             this.Controls.Add(this.panelTitulo);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Cat_DatosContribuyenteView";
-            this.Text = "Cat_DatosContribuyenteView";
-            this.Load += new System.EventHandler(this.Cat_DatosContribuyenteView_Load);
+            this.Name = "Cat_ProductosView";
+            this.Text = "Cat_Productos";
             this.panelTitulo.ResumeLayout(false);
             this.panelTitulo.PerformLayout();
             this.tabControlDGC.ResumeLayout(false);
