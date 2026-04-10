@@ -17,7 +17,7 @@ namespace Anexo24App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Cat_ProductosView());
+            Application.Run(new Cat_ProveedoresView());
         }
     }
 }
