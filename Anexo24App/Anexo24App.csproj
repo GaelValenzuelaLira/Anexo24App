@@ -75,6 +75,12 @@
     <Compile Include="Views\Cat_ProductosView.Designer.cs">
       <DependentUpon>Cat_ProductosView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Cat_ProveedoresView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Cat_ProveedoresView.Designer.cs">
+      <DependentUpon>Cat_ProveedoresView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\DashBoardView.cs">
       <SubType>Form</SubType>
     </Compile>
