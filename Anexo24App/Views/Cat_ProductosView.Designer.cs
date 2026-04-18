@@ -81,7 +81,7 @@
             this.panelTitulo.Controls.Add(this.lblTitulo);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(0, 0);
-            this.panelTitulo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelTitulo.Name = "panelTitulo";
             this.panelTitulo.Size = new System.Drawing.Size(1138, 47);
             this.panelTitulo.TabIndex = 0;
@@ -118,7 +118,7 @@
             this.tabPage1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 33);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage1.Size = new System.Drawing.Size(1130, 603);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Vista";
@@ -206,7 +206,7 @@
             this.tabPageDetalles.Controls.Add(this.panelTituloDetalles);
             this.tabPageDetalles.Location = new System.Drawing.Point(4, 33);
             this.tabPageDetalles.Name = "tabPageDetalles";
-            this.tabPageDetalles.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDetalles.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPageDetalles.Size = new System.Drawing.Size(1130, 603);
             this.tabPageDetalles.TabIndex = 1;
             this.tabPageDetalles.Text = "Detalles";
@@ -456,7 +456,7 @@
             this.ClientSize = new System.Drawing.Size(1138, 687);
             this.Controls.Add(this.tabControlDGC);
             this.Controls.Add(this.panelTitulo);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Cat_ProductosView";
             this.Text = "Cat_Productos";
             this.panelTitulo.ResumeLayout(false);

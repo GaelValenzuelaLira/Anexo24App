@@ -87,6 +87,12 @@
     <Compile Include="Views\DashBoardView.Designer.cs">
       <DependentUpon>DashBoardView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Int_EntradasView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Int_EntradasView.Designer.cs">
+      <DependentUpon>Int_EntradasView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DashBoardView.resx">
       <DependentUpon>DashBoardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Int_EntradasView.resx">
+      <DependentUpon>Int_EntradasView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
