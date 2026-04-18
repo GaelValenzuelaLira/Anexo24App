@@ -93,6 +93,12 @@
     <Compile Include="Views\Int_EntradasView.Designer.cs">
       <DependentUpon>Int_EntradasView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Int_SalidasView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Int_SalidasView.Designer.cs">
+      <DependentUpon>Int_SalidasView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Int_EntradasView.resx">
       <DependentUpon>Int_EntradasView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Int_SalidasView.resx">
+      <DependentUpon>Int_SalidasView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>

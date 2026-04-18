@@ -1,6 +1,6 @@
 ﻿namespace Anexo24App.Views
 {
-    partial class Int_EntradasView
+    partial class Int_SalidasView
     {
         /// <summary>
         /// Required designer variable.
@@ -84,9 +84,9 @@
             this.lblTitulo.Location = new System.Drawing.Point(2, 9);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(110, 29);
+            this.lblTitulo.Size = new System.Drawing.Size(89, 29);
             this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Entradas";
+            this.lblTitulo.Text = "Salidas";
             // 
             // btnRefresh
             // 
@@ -335,15 +335,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Recuerda siempre \"Guardar cambios\" si realizas alguno.";
             // 
-            // Int_EntradasView
+            // Int_SalidasView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1138, 687);
             this.Controls.Add(this.tabControlDGC);
             this.Controls.Add(this.panelTitulo);
-            this.Name = "Int_EntradasView";
-            this.Text = "Int_EntradasView";
+            this.Name = "Int_SalidasView";
+            this.Text = "Int_SalidasView";
             this.panelTitulo.ResumeLayout(false);
             this.panelTitulo.PerformLayout();
             this.tabControlDGC.ResumeLayout(false);
